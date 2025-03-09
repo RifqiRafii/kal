@@ -1,5 +1,3 @@
-# Welcome to your Jupyter Book
-
 # WEBSITE MATERI KAL
 
 Selamat datang di website saya
