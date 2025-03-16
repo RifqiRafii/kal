@@ -219,3 +219,66 @@ $$
 Dari baris kedua:$$ −x2+2x3=1⇒x2=2x3−1-x_2 + 2x_3 = 1 \Rightarrow x_2 = 2x_3 - 1 Dari baris pertama: x1+(2x3−1)=5⇒x1=6−2x3x_1 + (2x_3 - 1) = 5 \Rightarrow x_1 = 6 - 2x_3$$
 
 Jadi, solusi umumnya adalah:$$ x1=6−2t,x2=2t−1,x3=tx_1 = 6 - 2t, \quad x_2 = 2t - 1, \quad x_3 = t dengan tt sebagai parameter bebas.$$
+
+Contoh soal:
+$$\begin{aligned}-7x_1-6x_2-12x_3&=-33\\5x_1+5x_2+7x_3&=24\\x_1+4x_3&=5\end{aligned}$$
+
+$A= \begin{bmatrix} 7& 6& - 12\\ 8& 8& 7\\ 1& 0& 4\end{bmatrix}$ $X= \begin{bmatrix} x_1\\ x_2\\ x_1\end{bmatrix}$ $b= \begin{bmatrix} - 37\\ 24\\ 0\end{bmatrix}$
+
+Untuk menyelesaikan sistem persamaan linear berikut
+
+$$\begin{aligned}-7x_1-6x_2-12x_3&=-33\\5x_1+5x_2+7x_3&=24\\x_1+4x_3&=5\end{aligned}$$
+
+Kita dapat menggunakan metode eliminasi Gauss. Berikut langkah-langkahnya:
+
+Langkah 1: Nyatakan $x_{1}$ dari Persamaan Ketiga
+
+Dari persamaan ketiga:
+
+$$x_1+4x_3=5\quad\Rightarrow\quad x_1=5-4x_3$$
+
+Langkah 2: Substitusi $x_1$ ke Persamaan Pertama dan Kedua
+
+Substitusi $x_1=5-4x_{\mathrm{g}}$ ke persamaan pertama:
+
+$$\begin{array}{cc}-7(5-4x_3)-6x_2-12x_3=-33\\-35+28x_3-6x_2-12x_3=-33\\-6x_2+16x_3=2&\text{(Persamaan A)}\end{array}$$
+
+Substitusi $x_1=5-4x_{\mathfrak{g}}$ ke persamaan kedua:
+
+$$\begin{array}{c}5(5-4x_3)+5x_2+7x_3=24\\25-20x_3+5x_2+7x_3=24\\5x_2-13x_3=-1\quad\text{(Persamaan B)}\end{array}$$
+
+Langkah 3: Selesaikan Sistem Dua Variabel
+
+Dari Persamaan A:
+
+$$-6x_2+16x_3=2\quad\Rightarrow\quad x_2=\frac{16x_3-2}{6}$$
+
+Substitusi $x_{2}$ ke Persamaan B:
+
+$$5\left(\frac{16x_3-2}6\right)-13x_3=-1\\\frac{80x_3-10}6-13x_3=-1\\\frac{80x_3-10-78x_3}6=-1\\\frac{2x_3-10}6=-1\\2x_3-10=-6\\2x_3=4\\x_{3}=2$$
+Langkah 4: Temukan Nilai $x_2$ dan $x_1$
+
+Substitusi $x_{\mathrm{g}}=2$ ke Persamaan A:
+
+$$x_2=\dfrac{16(2)-2}{6}=\dfrac{32-2}{6}=\dfrac{30}{6}=5$$
+
+Substitusi $x_{3}=2$ ke persamaan $x_1=5-4x_{3}$
+
+$$x_1=5-4(2)=5-8=-3$$
+
+### Solusi Akhir
+$x_1=-3,\quad x_2=5,\quad x_3=2$
+
+## Verifikasi
+
+1. Substitusi ke persamaan pertama:
+
+$$-7(-3)-6(5)-12(2)=21-30-24=-33$$
+
+2. Substitusi ke persamaan kedua:
+
+$$5(-3)+5(5)+7(2)=-15+25+14=24$$
+
+3. Substitusi ke persamaan ketiga:
+
+$$\begin{matrix}-3+4(2)=-3+8=5&\text{(Benar)}\end{matrix}$$
