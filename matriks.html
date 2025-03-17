@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'matriks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -389,6 +391,12 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matrik">Pengurangan Matrik</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-pengurangan-matrik">Konsep pengurangan matrik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-2x2">Matriks 2x2:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-matriks">2.Invers Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-invers-matriks">Syarat Invers Matriks:</a></li>
 </ul>
 </li>
 </ul>
@@ -486,6 +494,51 @@ Perkalian Matriks:
 </div>
 </div>
 </div>
+<ol class="arabic simple">
+<li><p>Determinan Matriks
+Definisi:
+Determinan matriks adalah nilai skalar yang dapat dihitung dari elemen-elemen matriks persegi (matriks yang jumlah baris dan kolomnya sama). Determinan matriks sering dilambangkan dengan det(A) atau ∣A∣</p></li>
+</ol>
+</section>
+<section id="matriks-2x2">
+<h3>Matriks 2x2:<a class="headerlink" href="#matriks-2x2" title="Link to this heading">#</a></h3>
+<p>Untuk matriks <span class="math notranslate nohighlight">\(A\)</span> berukuran <span class="math notranslate nohighlight">\(2\times2\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A=\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}\end{split}\]</div>
+<p>Determinan matriks <span class="math notranslate nohighlight">\(A\)</span> dihitung dengan rumus:</p>
+<div class="math notranslate nohighlight">
+\[\det(A)=ad-bc\]</div>
+<p>Contoh:
+Misalkan matriks <span class="math notranslate nohighlight">\(A=\begin{pmatrix}3&amp;2\\1&amp;4\end{pmatrix}\)</span>,maka determinannya adalah</p>
+<div class="math notranslate nohighlight">
+\[\det(A)=(3\times4)-(2\times1)=12-2=10\]</div>
+<p>\begin{gathered}\mathrm{Matriks~3\times3:}\UntukmatriksAberukuran3\times3\A={\begin{pmatrix}a&amp;b&amp;c\d&amp;e&amp;f\g&amp;h&amp;i\end{pmatrix}}\DeterminanmatriksAdihitungdenganrumus:\operatorname*{det}(A)=a(ei-fh)-b(di-fg)+c(dh-eg)\Contoh:\text{Misalkan matriks }A=\begin{pmatrix}1&amp;2&amp;3\4&amp;5&amp;6\7&amp;8&amp;9\end{pmatrix},\mathrm{maka~determinannya~adalah;}\mathrm{t}(A)=1(5\times9-6\times8)-2(4\times9-6\times7)+3(4\times8-5\times7)\=1(45-48)-2(36-42)+3(32-35\=1(-3)-2(-6)+3(-3)\=-3+12-9=0\end{gathered}</p>
+<p>Sifat-Sifat Determinan:</p>
+<p>1.Jika matriks <span class="math notranslate nohighlight">\(A\)</span> memiliki satu baris atau kolom yang semua elemennya nol, maka <span class="math notranslate nohighlight">\(\det(A)=0.\)</span>
+2. Jika dua baris atau kolom matriks <span class="math notranslate nohighlight">\(A\)</span> identik, maka <span class="math notranslate nohighlight">\(\det(A)=0.\)</span>
+3. Jika matriks <span class="math notranslate nohighlight">\(A\)</span> adalah matriks segitiga (atas atau bawah), maka determinannya adalah hasil kali elemen-
+elemen diagonal utama.
+4.Jika matriks <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span> berukuran sama, maka <span class="math notranslate nohighlight">\(\det(AB)=\det(A)\times\det(B).\)</span></p>
+</section>
+</section>
+<section id="invers-matriks">
+<h2>2.Invers Matriks<a class="headerlink" href="#invers-matriks" title="Link to this heading">#</a></h2>
+<section id="definisi">
+<h3>Definisi:<a class="headerlink" href="#definisi" title="Link to this heading">#</a></h3>
+<p>Invers matriks <span class="math notranslate nohighlight">\(A\)</span> adalah matriks <span class="math notranslate nohighlight">\(A^{-1}\)</span> sedemikian sehingga:
+$<span class="math notranslate nohighlight">\(A\times A^{-1}=A^{-1}\times A=I\)</span>$</p>
+<p>di mana <span class="math notranslate nohighlight">\(I\)</span> adalah matriks identitas</p>
+</section>
+<section id="syarat-invers-matriks">
+<h3>Syarat Invers Matriks:<a class="headerlink" href="#syarat-invers-matriks" title="Link to this heading">#</a></h3>
+<p>Matriks <span class="math notranslate nohighlight">\(A\)</span> memiliki invers jika dan hanya jika <span class="math notranslate nohighlight">\(\det(A)\neq0.\)</span></p>
+<p>Sifat-Sifat Invers Matriks:</p>
+<ol class="arabic simple">
+<li><p>Jika <span class="math notranslate nohighlight">\(A\)</span> memiliki invers, maka inversnya unik.</p></li>
+<li><p>Jika <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span> memiliki invers, maka <span class="math notranslate nohighlight">\((AB)^{-1}=B^{-1}A^{-1}.\)</span>
+3.Jika <span class="math notranslate nohighlight">\(A\)</span> memiliki invers, maka <span class="math notranslate nohighlight">\((A^{-1})^{-1}=A.\)</span>
+4, Jika <span class="math notranslate nohighlight">\(A\)</span> memiliki invers, maka <span class="math notranslate nohighlight">\((A^T)^-1=(A^{-1})^T.\)</span></p></li>
+</ol>
 </section>
 </section>
 </section>
@@ -557,6 +610,12 @@ Perkalian Matriks:
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pengurangan-matrik">Pengurangan Matrik</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-pengurangan-matrik">Konsep pengurangan matrik</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-2x2">Matriks 2x2:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invers-matriks">2.Invers Matriks</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-invers-matriks">Syarat Invers Matriks:</a></li>
 </ul>
 </li>
 </ul>
