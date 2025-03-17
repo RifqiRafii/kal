@@ -220,10 +220,11 @@ Dari baris kedua:$$ −x2+2x3=1⇒x2=2x3−1-x_2 + 2x_3 = 1 \Rightarrow x_2 = 2x
 
 Jadi, solusi umumnya adalah:$$ x1=6−2t,x2=2t−1,x3=tx_1 = 6 - 2t, \quad x_2 = 2t - 1, \quad x_3 = t dengan tt sebagai parameter bebas.$$
 
-Contoh soal:
+### Contoh soal:
+
 $$\begin{aligned}-7x_1-6x_2-12x_3&=-33\\5x_1+5x_2+7x_3&=24\\x_1+4x_3&=5\end{aligned}$$
 
-$A= \begin{bmatrix} 7& 6& - 12\\ 8& 8& 7\\ 1& 0& 4\end{bmatrix}$ $X= \begin{bmatrix} x_1\\ x_2\\ x_1\end{bmatrix}$ $b= \begin{bmatrix} - 37\\ 24\\ 0\end{bmatrix}$
+$A= \begin{bmatrix} -7& 6& - 12\\ 8& 8& 7\\ 1& 0& 4\end{bmatrix}$ $X= \begin{bmatrix} x_1\\ x_2\\ x_1\end{bmatrix}$ $b= \begin{bmatrix} - 33\\ 24\\ 0\end{bmatrix}$
 
 Untuk menyelesaikan sistem persamaan linear berikut
 
